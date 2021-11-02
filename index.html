@@ -24,38 +24,68 @@
         <div class="tasks-container">
             <form>
                 <span class="input-container">
-                    <div class="circle"></div>
+                    <div class="circle">
+                        <img src="images/icon-check.svg" alt="check-img">
+                    </div>
                     <input type="text" placeholder="Create a new todo..." id="task-input">
                 </span>
             </form>
-            <div class="tasks">
+            <div class="new-old-task-container">
                 <div class="task">
-                    <div class="circle"></div>
-                    <p>Task1</p>
-                    <img src="" alt="">
+                    <div class="content">
+                        <div class="circle one"><img src="images/icon-check.svg" alt="check-img"></div>
+                        <p>tasnk 1</p>
+                    </div>
+                    <img class="close" src="images/icon-cross.svg" width="12vw" alt="close">
+                </div>
+                 <div class="task">
+                    <div class="content">
+                        <div class="circle one">  <img src="images/icon-check.svg" alt="check-img"></div>
+                        <p>awdawudbdawdawdawdawdawdawdadawdawdwdbawui</p>
+                    </div>
+                    <img class="close" src="images/icon-cross.svg" width="12vw" alt="close">
                 </div>
                 <div class="task">
-                    <div class="circle"></div>
-                    <p>Task1</p>
-                    <img src="" alt="">
+                    <div class="content">
+                        <div class="circle one">  <img src="images/icon-check.svg" alt="check-img"></div>
+                        <p>awdawudbauiwdbaiudbawui</p>
+                    </div>
+                    <img class="close" src="images/icon-cross.svg" width="12vw" alt="close">
                 </div>
                 <div class="task">
-                    <div class="circle"></div>
-                    <p>Task1</p>
-                    <img src="" alt="">
+                    <div class="content">
+                        <div class="circle">  <img src="images/icon-check.svg" alt="check-img"></div>
+                        <p>awdawudbauiwdbaiudbawui</p>
+                    </div>
+                    <img class="close" src="images/icon-cross.svg" width="12vw" alt="close">
                 </div>
                 <div class="task">
-                    <div class="circle"></div>
-                    <p>Task1</p>
-                    <img src="" alt="">
+                    <div class="content">
+                        <div class="circle">  <img src="images/icon-check.svg" alt="check-img"></div>
+                        <p>awdawudbauiwdbaiudbawui</p>
+                    </div>
+                    <img class="close" src="images/icon-cross.svg" width="12vw" alt="close">
                 </div>
                 <div class="task">
-                    <div class="circle"></div>
-                    <p>Task1</p>
-                    <img src="" alt="">
+                    <div class="content">
+                        <div class="circle">  <img src="images/icon-check.svg" alt="check-img"></div>
+                        <p>awdawudbauiwdbaiudbawui</p>
+                    </div>
+                    <img class="close" src="images/icon-cross.svg" width="12vw" alt="close">
+                </div>
+                <div class="task task-information">
+                    <p id="items-left">6 items left</p>
+                    <p id="items-left">Clear Completed</p>
                 </div>
             </div>
         </div>
+        <span class="options">
+           <a href="#">All</a>
+           <a href="#">Active</a>
+           <a href="#">Completed</a>
+        </span>
+        <p id="drop-and-drog">Drog and drop to reorder list</p>
     </main>
+    <script src="app.js"></script>
 </body>
 </html>

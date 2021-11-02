@@ -19,7 +19,7 @@
     background-repeat: no-repeat;
     background-size: 100% 53.86666666666667vw;
 
-    background-color: black;
+    background-color: #F1F0F5;
 }
 
 header{
@@ -31,6 +31,7 @@ header{
     width: 86.93333333333334vw;
     height: 29.333333333333332vw;
 }
+
 #todo-title{
     color:#ffffff;
 }
@@ -45,11 +46,15 @@ header{
 /*Input Design*/
 
 .tasks-container{
+    display: flex;
+    flex-direction: column;
+
     width: 86.93333333333334vw;
     height:113.86666666666666vw;
+
 }
 
-.input-container{
+.input-container, .options{
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -80,7 +85,7 @@ header{
     width: 5.333333333333333vw;
     height: 5.333333333333333vw;
 
-    background-color: transparent;
+    background-color: #ffffff;
 
     border:0.5px solid hsl(236, 9%, 61%);
     border-radius: 5.333333333333333vw;
@@ -89,27 +94,113 @@ header{
 
     margin-bottom: 0.7vw;
 
+    cursor:pointer;
+
+    z-index:21;
 }
 
+.check-circle{
+    background-color:red;
+
+    width:100%;
+}
+
+.circle > img{
+    margin-left:1vw;
+}
+
+
 /*Tasks*/
-.tasks{
+
+.new-old-task-container{
     display: flex;
     flex-direction: column;
+    justify-content: center;
 
-    width: 100%;
-    height: 98.4vw;
+    width: 87.2vw;
+    height:98.13333333333334vw;
+
+    border-radius: 1.5vw;
+
+    background-color: #ffffff;
+
+    margin-top:4.533333333333333vw;
 }
 .task{
     display: flex;
     flex-direction: row;
+    align-items:center;
+    justify-content: space-around;
 
-    border-radius: 0;
-    border-inline: red;
+    border-bottom:1px solid #E6E5EA;
 
     width: 100%;
-    height: 20%;
+    height:14.4vw;
+
+    z-index: 19;
 }
 
-.task p{
-    color:#ffffff;
+.content{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+
+    width: 68%;
+
+    margin-left:0.4vw;
+
+    z-index:20;
+}
+
+.content > p{
+    color: #000;
+
+    font-size:3.2vw;
+
+    margin-left:4.5vw;
+
+    text-align: start;
+
+    inline-size:80%;
+
+    word-wrap: break-word;
+}
+
+.task > .close{
+    cursor: pointer;
+}
+
+.task-information{
+    border:0;
+}
+
+.task-information > p{
+    font-size:3vw;
+
+    color:hsl(236, 9%, 61%);
+}
+
+/*options*/
+.options{
+    width: 86.5%;
+    height: 14.4vw;
+
+    margin-top:6vw;
+}
+.options > a{
+    font-size:4vw;
+
+    margin-left:3vw;
+
+    text-decoration: none;
+
+    color:hsl(236, 9%, 61%);
+}
+
+#drop-and-drog{
+    color:hsl(236, 9%, 61%);
+    font-size:3vw;
+
+    margin-top:15vw;
 }
