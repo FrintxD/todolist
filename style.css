@@ -97,16 +97,25 @@ header{
     cursor:pointer;
 
     z-index:21;
+
+    transition: all 0.5s ease;
 }
 
 .check-circle{
-    background-color:red;
+    background:linear-gradient(hsl(192, 100%, 67%) , hsl(280, 87%, 65%));
 
-    width:100%;
+    opacity:100%;
+
+    border:none;
+
 }
 
 .circle > img{
+    width: 3.2vw;
+    height: 3vw;
+
     margin-left:1vw;
+    margin-top:1.2vw;
 }
 
 
