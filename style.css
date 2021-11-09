@@ -81,6 +81,16 @@ header{
     padding-left:4vw;
 }
 
+.checkbox-design{
+    display: none;
+
+    width: 10vw;
+}
+.checkbox-design:checked .circle{
+    background:linear-gradient(hsl(192, 100%, 67%) , hsl(280, 87%, 65%));
+
+}
+
 .circle{
     width: 5.333333333333333vw;
     height: 5.333333333333333vw;
@@ -101,7 +111,7 @@ header{
     transition: all 0.5s ease;
 }
 
-.check-circle{
+.circle:visited{
     background:linear-gradient(hsl(192, 100%, 67%) , hsl(280, 87%, 65%));
 
     opacity:100%;
